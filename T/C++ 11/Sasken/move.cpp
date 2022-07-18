@@ -1,0 +1,94 @@
+#include <iostream>
+ 
+template<class T>
+class Auto_ptr4
+{
+	T* m_ptr;
+public:
+	Auto_ptr4(T* ptr = nullptr)
+		:m_ptr(ptr)
+	{
+	}
+ 
+	~Auto_ptr4()
+	{
+		delete m_ptr;
+	}
+ 
+	// Copy constructor
+	// Do deep copy of a.m_ptr to m_ptr
+	Auto_ptr4(const Auto_ptr4 &a)
+	{
+		m_ptr = new T;
+		*m_ptr = *a.m_ptr;
+	std::cout<<"copy contructor"<<std::endl;
+	}
+ 
+	// Move constructor
+	// Transfer ownership of a.m_mptr to m_ptr
+	Auto_ptr4(Auto_ptr4 &&a)
+		: m_ptr(a.m_ptr)
+	{
+	std::cout<<" move constructor"<<std::endl;
+		a.m_ptr = nullptr;
+	}
+ 
+	// Copy assignment
+	// Do deep copy of a.m_ptr to m_ptr
+	Auto_ptr4& operator=(const Auto_ptr4 &a)
+	{
+		// Self-assignment detection
+		if (&a == this)
+			return *this;
+ std::cout<<"= operator"<<std::endl;
+		// Release any resource we're holding
+		delete m_ptr;
+ 
+		// Copy the resource
+		m_ptr = new T;
+		*m_ptr = *a.m_ptr;
+ 
+		return *this;
+	}
+ 
+	// Move assignment
+	// Transfer ownership of a.m_ptr to m_ptr
+	Auto_ptr4& operator=(Auto_ptr4 &&a)
+	{
+		// Self-assignment detection
+		if (&a == this)
+			return *this;
+ 
+		// Release any resource we're holding
+		delete m_ptr;
+ std::cout<<" move assignment "<<std::endl;
+		// Transfer ownership of a.m_ptr to m_ptr
+		m_ptr = a.m_ptr;
+		a.m_ptr = nullptr;
+ 
+		return *this;
+	}
+ 
+	};
+ 
+class Resource
+{
+public:
+	Resource() { std::cout << "Resource acquired\n"; }
+	~Resource() { std::cout << "Resource destroyed\n"; }
+};
+ 
+Auto_ptr4<Resource> generateResource()
+{
+	Auto_ptr4<Resource> res(new Resource);
+	return res;
+}
+ 
+int main()
+{
+Auto_ptr4<Resource> mainres;//=std::move(generateResource()); // this assignment will invoke the move assignment
+mainres=std::move(generateResource()); 
+//Auto_ptr4<Resource> mainres1;
+//mainres1=mainres;//=std::move(generateResource()); // this assignment will invoke the move assignment
+return 0;
+}
