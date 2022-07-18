@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var a;
+        function demo() {
+            document.getElementById("d1").innerHTML = typeof a;
+        }
+        function demo1() {
+            var n1 = document.forms["f1"]['n1'].value;
+            var n2 = document.forms["f1"]['n2'].value;
+            document.querySelector("div").innerHTML = parseFloat(n1) + parseFloat(n2);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <form name="f1">
+        n1<input type="number" name="n1" />
+        n2<input type="number" name="n2" />
+    </form>
+    <button onclick="demo()">bt</button>
+    <button onclick="demo1()">bt</button>
+</body>
+
+</html>

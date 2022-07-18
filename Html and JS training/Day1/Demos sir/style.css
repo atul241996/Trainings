@@ -1,0 +1,17 @@
+h1{
+    background-color: aqua
+}
+div,p,span{
+   height: 50px;
+   width: 500px;
+   background-color: bisque;
+   font-size: 35px; 
+}
+.c1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#s1{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}

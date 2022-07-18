@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+}
+
+div,span,p {
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    font-size: 35px;
+}
+
+.c1 {
+    height: 100px;
+    width: 150px;
+    background-color: aqua;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+#s1{
+    font-family:fantasy;
+    font-size: 101px;
+}

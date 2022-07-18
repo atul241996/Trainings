@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function demo(){
+                console.log('clicked');
+            }
+            function demo1(){
+                //document.write("Hello");
+                //document.querySelector("div").innerHTML="Hello";
+                //document.querySelector("#d1").innerHTML="Hello";
+                document.getElementById("d1").innerHTML="Hello";
+            }
+            demo2=function()//anonymous
+            {
+                document.getElementById("d1").innerHTML="Welcome";
+            }
+            function demo3(){
+                return "Good Afternoon";
+            }
+            function demo4()
+            {
+                document.getElementById('d1').innerHTML=demo3()
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <input type="button" onclick="console.log('clicked')" value="click" name="b1"/>
+        <button onclick="console.log('clicked')">Click</button>
+        <button onclick="demo()">B3</button>
+        <button onclick="demo1()">B4</button>
+        <button onclick="demo2()">B5</button>
+        <button onclick="document.getElementById('d1').innerHTML=demo3()">B6</button>
+        <button onclick="demo4()">B7</button>
+    </body>
+</html>

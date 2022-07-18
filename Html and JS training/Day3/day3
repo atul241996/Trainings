@@ -1,0 +1,47 @@
+SASS and LESS
+
+extension for SASS ->scss
+
+bootstrap 
+
+library - jquery - pre written code
+framework - angular - many libraries makes a framework 
+platform - 
+
+
+
+column 
+flexbox
+meta viewport
+media queries
+...
+
+study from w3
+
+repl - read eval print loop
+
+npm init generates package .json
+
+vresion 
+1.2.3
+
+1 - major   *
+2 - minor   ^
+3 - patch   ~
+
+typescript  - microsoft
+angular - google
+js - mocha / livescript - no datatypes ....thats y typescript came
+
+angular versions
+
+1       angular js
+2       typescript
+4
+5
+6
+7       latest
+
+
+there is no version 3 as angular 2 have router version 3 so to maintain the consistency 3 was skiiped now version 4 has router and everything as 4
+

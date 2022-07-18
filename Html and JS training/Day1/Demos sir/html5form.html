@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="GET" action="first.html">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" placeholder="enter name" minlength="2" maxlength="10" required/></td>
+                </tr>
+                <tr>
+                    <td>Pass</td>
+                    <td><input type="password" name="pass"/></td>
+                </tr>
+                <tr>
+                    <td>FavColor</td>
+                    <td>
+                        <input type="color" name="favcolor"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>
+                        <input type="url" name="website"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOJ</td>
+                    <td>
+                        <input type="date" name="doj"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Range</td>
+                    <td>
+                        <input type="range" name="range"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                            Male<input type="radio" name="gender" value="male"/>
+                            Female<input type="radio" name="gender" value="female"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Age</label></td>
+                    <td>
+                        <input type="number" name="age"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                            Reading<input type="checkbox" name="reading"/>
+                            Writing<input type="checkbox" name="writing"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td>
+                            <select name="qual">
+                                    <option>Grad</option>
+                                    <option>PG</option>
+                                    <option>PhD</option>
+                                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                            <textarea name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Resume</td>
+                    <td>
+                            <input type="file" name="resume"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset"/></td>
+                    <td><input type="submit" value="Save"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

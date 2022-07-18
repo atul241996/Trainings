@@ -1,0 +1,57 @@
+day2-
+arrays
+arrow function => lambda function
+function overloading
+
+default values - es6 only
+arrow function - es6 only
+let and const - es6 only
+
+
+OOP in JS
+
+class is there in ES5 but class keyword is not there 
+we were using closure to create class
+but ES6 has class keyword
+
+parameterized constructor can be there but there cant be multiple constructor
+
+comparision table
+
+https://kangax.github.io/compat-table/es6/
+
+date
+class
+XML
+
+html4
+img 
+
+html5 
+svg-xml
+img
+canvas-js
+
+mp3 ogg and wav - suppoted audio formts 
+
+https://www.tutorialrepublic.com/html-reference/html-a-tag.php
+
+html5 apis
+
+bom - browser object model
+
+ajax
+confirm
+json 
+Bom-> history
+=====================================================
+json -- js object notation
+
+{key:value,kay:value}
+
+typescript
+=====================================================
+day3 
+
+css 
+angular

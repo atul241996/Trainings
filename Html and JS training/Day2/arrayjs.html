@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var arrFruits = ["orange", 'banana', 'grapes', 'guava', 'coconut'];
+        var arrNum = ['12', '134', '1243', '1'];
+        function abc() {
+            var i = 0;
+            var res = "<ul>";
+            for (i = 0; i < arrFruits.length; i++) {
+                res += "<li>" + arrFruits[i] + "</li>";
+            }
+            res += "</ul>"
+            document.getElementById("d1").innerHTML = res;
+        }
+        function abc2() {
+            var i = 0;
+            var res = "<ul>";
+            do {
+                arrFruits.forEach(function (Element) {
+                    console.log(Element);
+                    res += "<li>" + arrFruits[i] + "</li>";
+                    i++;
+                });
+            } while (i < arrFruits.length);
+            res += "</ul>"
+            document.getElementById("d1").innerHTML = res;
+        }
+        function abc3() {
+            var i = 0;
+            var res = "<ul>";
+            do {
+                arrFruits.forEach(ele)
+                res += "<li>" + arrFruits[i] + "</li>";
+                i++;
+            } while (i < arrFruits.length);
+            res += "</ul>"
+            document.getElementById("d1").innerHTML = res;
+        }
+
+        function ele(Element) {
+            console.log(Element);
+        }
+
+        function abc4() {
+            var i = 0;
+            var res = "<ul>";
+            do {
+                arrFruits.forEach(Element => console.log(Element),
+                    res += "<li>" + arrFruits[i] + "</li>", i++
+                );
+            } while (i < arrFruits.length);
+            res += "</ul>"
+            document.getElementById("d1").innerHTML = res;
+        }
+
+        function abc5() {
+            var arrTemp = []
+            for (var i = 0; i < arrNum.length; i++) {
+                arrTemp[i] = Number(arrNum[i])
+            }
+            arrTemp.sort((a, b) => (a - b));
+            arrTemp.forEach(Element => console.log(Element))
+        }
+
+        function abc6(a) {
+            console.log(a + "single");
+        }
+        function abc6(a, b) {
+            console.log(a);
+            console.log(b);
+        }
+        //closure
+        //iife
+        function abc7() {
+            var i = 0;
+            var res
+            return (function() {
+                res = "<ul>";
+                do {
+                    arrFruits.forEach(Element => console.log(Element),
+                        res += "<li>" + arrFruits[i] + "</li>", i++
+                    );
+                } while (i < arrFruits.length);
+                res += "</ul>"
+                document.getElementById("d1").innerHTML = res;
+            })()
+        }
+        class Demo{
+            i=10;
+        }
+        var obj =new Demo();
+        console.log(obj.i);
+        let obj2 = new Demo();
+        console.log(obj2.i);
+    </script>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <button onclick="abc()">b1</button>
+    <button onclick="abc2()">b2</button>
+    <button onclick="abc3()">b3</button>
+    <button onclick="abc4()">b4</button>
+    <button onclick="arrFruits.forEach(Element=>console.log(Element))">b5</button>
+    <button onclick="arrFruits.sort();arrFruits.forEach(Element=>console.log(Element))">b6</button>
+    <button onclick="abc5()">b7</button>
+    <button onclick="abc6('1')">b8</button>
+    <button onclick="abc7()">b9</button>
+</body>
+
+</html>

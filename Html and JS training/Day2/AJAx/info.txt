@@ -1,0 +1,13 @@
+server response 
+<br>
+holds the status of the XMLhttpRequest
+<br>
+<pre>
+0-req mot inintalized
+1-server connection established
+2-req recieved
+3- processing req
+4- req finish and resp ready
+<pre>
+5=="5"    true
+5==="5"   false

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function sets(){
+            sessionStorage.setItem("fname","aaaaa");
+        }
+        function setl(){
+            localStorage.setItem("lname","lllll");
+        }
+        function gets(){
+            document.getElementById("#res").innerHTML=sessionStorage.getItem("fname")
+        }
+        function getl(){
+            document.getElementById("#res").innerHTML=localStorage.getItem("lname");
+        }
+        function dell(){
+            localStorage.removeItem("lname");
+        }
+        function dels(){
+            sessionStorage.removeItem("fname");
+        }
+    </script>
+</head>
+<body>
+    <div id="#res"></div>
+    <button onclick="sets()">sets</button>
+    <button onclick="setl()">setl</button>
+    <button onclick="gets()">gets</button>
+    <button onclick="getl()">getl</button>
+    <button onclick="dell()">dell</button>
+    <button onclick="dels()">dels</button>
+</body>
+</html>

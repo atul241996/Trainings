@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var a=5;
+            console.log(a);//5
+            (function(){
+                var a=10;
+                console.log(a);//10
+                if(true)
+                {
+                    let a=20;//es6
+                    console.log(a);//20
+                }
+                console.log(a);//10
+            })();
+           //abc();
+            console.log(a);//5
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //var name = prompt("enter the name","name");
+        //document.write("<h1>wlecome " + name+"</h1>")
+        function abc(){
+            var num1 = prompt("enter num1")
+            var num1 =Number(num1);
+            for(var i=0;i<=10;i++)
+            {
+            console.log(num1*i+"<br/>");     
+            }
+        }
+        abc();
+        function abc2(){
+            var num3 = prompt("enter num3")
+            var num2 = prompt("enter num2")
+            var temp1 = Number(num2)
+            var temp2 = Number(num3)
+            document.write(temp1+temp2);
+        }
+        function abc3(){
+            var num3 = prompt("enter num3")
+            var num2 = prompt("enter num2")
+            document.write(parseFloat(num2)+parseFloat(num3));
+        }
+        //abc2();
+    </script>
+</head>
+<body>
+    <button onclick="abc3()">button</button>
+</body>
+</html>

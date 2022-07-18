@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#div3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes example2 {
+    100%   {left:0px; top:0px;}
+  80%  {left:0px; top:400px;}
+  60%  { left:0px; top:20px;}
+  40%  { left:0px; top:300px;}
+  20% {left:0px; top:40px;}
+  0% {left:0px; top:200px;}
+}
+/* Safari 4.0 - 8.0 
+@-webkit-keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}*/
+
+@keyframes example2 {
+    0%   {left:0px; top:0px;}
+  20%  {left:0px; top:400px;}
+  40%  { left:0px; top:20px;}
+  60%  { left:0px; top:300px;}
+  80% {left:0px; top:40px;}
+  100% {left:0px; top:200px;}
+}
+/* Standard syntax 
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+*/
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /*-webkit-transition: width 2s;  For Safari 3.1 to 6.0 
+  transition: width 2s;
+  -webkit-transition: height 2s;  For Safari 3.1 to 6.0 
+  transition: height 2s;*/
+}
+#d1{
+    border: 5px dashed red;/*short hand*/
+}
+
+#d2{
+    border-width: 5px ;/*long hand*/
+    border-style: dashed ;
+    border-color: red;
+}
+/*div:hover{
+    transform: rotate(180deg);
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}*/
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<!--<div>sxSXsx</div>
+<div id="d1">hi</div>
+
+<div id="d2">hi2</div>
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div id="div3"></div>
+<br>
+-->
+<div>image
+    <img src="Soccer_ball.svg"/>
+</div>
+
+</body>
+</html>

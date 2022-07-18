@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function demo1(){
+                console.log('asadfadfadf')
+            }
+            function demo2(){
+                document.getElementById("d1").innerHTML="helo"
+                //document.querySelector("#d1").innerHTML="hello"
+                //document.querySelector("div").innerHTML="hello"
+                //document.write("hello");
+            }
+            dmeo2 = function (){
+                document.getElementById('d1').innerHTML="welcome"//anonymous function
+            }
+            function demo3(){
+                return "good";
+            }
+            function demo4(){
+                document.getElementById('d1').innerHTML=demo3()
+            }
+            </script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <input type="button" onclick="console.log('clciked')" value="click" name ="b1"/>
+        <button onclick="demo1()">B3</button>
+        <button onclick="demo2()">B4</button>
+        <button onclick="dmeo2()">b5</button>
+        <button onclick="console.log('adf')">clicknew</button>
+        <button onclick="console.log (demo3())">B6</button>
+        <button onclick="document.getElementById('d1').innerHTML=demo3()">B7</button>
+        <button onclick="demo4()">b8</button>
+    </body>
+</html>
