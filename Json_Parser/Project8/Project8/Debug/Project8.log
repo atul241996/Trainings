@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\administrator\source\repos\project8\project8\source.cpp(11): warning C4996: 'Json::Reader::Reader': Use CharReader and CharReaderBuilder instead
+  c:\jsoncpp-master\include\json\reader.h(55): note: see declaration of 'Json::Reader::Reader'
+c:\users\administrator\source\repos\project8\project8\source.cpp(35): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Project8.vcxproj -> c:\Users\administrator\source\repos\Project8\Debug\Project8.exe
