@@ -1,0 +1,6 @@
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
+
+http://www.dofactory.com/reference/csharp-coding-standards
+
+https://www.c-sharpcorner.com/article/C-Sharp-best-coding-guidelines-part-one/
