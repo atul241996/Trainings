@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+
+class myclass
+{
+private :
+	int count;
+	int *ptr;
+public :
+	myclass()
+	{
+		cout<<"default constructor"<<endl;
+		cout<<"enter the count "<<endl;
+		cin>>this->count;
+		ptr=(int *)malloc(this->count * 4);
+		int var;
+		for(int i= 0; i<count ;i++)
+		{	
+			cin>>var;
+		*(ptr +i)=var;
+		}
+	}
+	
+	void show()
+	{
+		for(int i=0;i<count;i++)
+		{
+		cout<<*(ptr+i)<<endl;
+	
+		}
+	}
+
+	void sort()
+	{
+	int i,j,temp;
+	for(i=0;i<count;i++)
+	{
+		for(j=0;j<count-1-i;j++)
+		{
+			if(*(ptr+j) > *(ptr+j+1))
+			{
+				temp=*(ptr+j);
+				*(ptr+j)=*(ptr+j+1);
+				*(ptr+j+1)=temp;
+			}
+		}
+
+	}
+	}
+	~myclass()
+	{
+		free(ptr);
+		cout<<"destructor"<<endl;
+	}
+};
+
+void main()
+{
+	myclass ob;
+	cout<<"before sorting"<<endl;
+	cout<<"======================="<<endl;
+	ob.show();
+	ob.sort();
+	
+	cout<<"after sorting"<<endl;
+	cout<<"======================="<<endl;
+	ob.show();
+cout<<"main completes"<<endl;	
+}

@@ -1,0 +1,19 @@
+
+#include <iostream>
+using namespace std;
+
+template <class T1,class T2>
+void fun(T1 a, T2 b,T2 c)
+{
+	cout<<a<<"  "<<b<<endl;
+	cout<<a+b+c<<endl;
+}
+
+
+void main()
+{
+	int i1=10,i2=20;
+	float f1=21.1,f2=22.1;
+	char ch1='A',ch2='B';
+	fun(i1,f2,f1);
+}
